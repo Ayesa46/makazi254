@@ -105,6 +105,36 @@ CREATE TABLE inquiries (
 ---
 
 ## Project Structure
+makazi254/
+├── config/
+│   └── db.php                  # Database connection
+├── includes/
+│   ├── navbar.php              # Reusable navigation component
+│   └── footer.php              # Reusable footer component
+├── seller/
+│   ├── dashboard.php           # Seller dashboard with statistics
+│   ├── add-listing.php         # Add property listing form
+│   ├── my-listings.php         # View all submitted listings
+│   └── inquiries.php           # View inquiries from buyers
+├── admin/
+│   ├── dashboard.php           # Admin dashboard with statistics
+│   ├── listings.php            # Approve or reject listings
+│   └── users.php               # Manage seller accounts
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Global styles
+│   │   ├── auth.css            # Register and login pages
+│   │   ├── dashboard.css       # Dashboard pages
+│   │   ├── listing.css         # Listing form and table
+│   │   ├── listing-single.css  # Single listing page
+│   │   └── home.css            # Homepage
+│   └── uploads/                # Uploaded property images
+├── index.php                   # Public homepage
+├── listing.php                 # Single listing page
+├── register.php                # Seller registration
+├── login.php                   # Login page
+├── logout.php                  # Session destruction
+└── README.md                   # Project documentation
 
 ---
 
@@ -196,4 +226,3 @@ Start Apache and MySQL in XAMPP. Open your browser and go to:
 
 Prudence Ayesa
 Makazi254 — Built as a full-stack web development project
-Kenya, 2024
