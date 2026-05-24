@@ -1,0 +1,58 @@
+.dashboard-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.dashboard-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 0.25rem;
+}
+
+.dashboard-container .auth-sub {
+    margin-bottom: 0;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: #fff;
+    border: 0.5px solid #D3D1C7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #888780;
+    font-weight: 500;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1C1A18;
+}
+
+.stat-number.approved {
+    color: #3B6D11;
+}
+
+.stat-number.pending {
+    color: #C8922A;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}

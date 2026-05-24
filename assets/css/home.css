@@ -1,0 +1,179 @@
+/* hero part */
+.hero {
+    background: #1C1A18;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 3px solid #C8922A;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #F5F0E8;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #C5BFB5;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Filter Section */
+.filter-container {
+    background: #fff;
+    border-bottom: 0.5px solid #D3D1C7;
+    padding: 1.25rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 9px 14px;
+    border: 0.5px solid #B4B2A9;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    background: #fff;
+    color: #1C1A18;
+    transition: border-color 0.15s;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+    outline: none;
+    border-color: #C8922A;
+}
+
+/* Listings Grid */
+.listings-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.results-count {
+    font-size: 14px;
+    color: #888780;
+    margin-bottom: 1.5rem;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.listing-card {
+    background: #fff;
+    border: 0.5px solid #D3D1C7;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.listing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.listing-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.listing-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: #F0EDE6;
+}
+
+.listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-image-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #888780;
+}
+
+.type-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.type-sale { background: #DCF0FB; color: #1A6B9A; }
+.type-rental { background: #FEF3DC; color: #C8922A; }
+.type-bnb { background: #EAF3DE; color: #3B6D11; }
+.type-hostel { background: #F3DEEA; color: #6B1A4A; }
+
+.listing-info {
+    padding: 1rem;
+}
+
+.listing-info h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1C1A18;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.listing-location {
+    font-size: 13px;
+    color: #888780;
+    margin-bottom: 8px;
+}
+
+.listing-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #C8922A;
+    margin-bottom: 6px;
+}
+
+.listing-seller {
+    font-size: 12px;
+    color: #B4B2A9;
+}
+
+/* No listings */
+.no-listings {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #888780;
+    font-size: 15px;
+}

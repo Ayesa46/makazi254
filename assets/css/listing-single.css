@@ -1,0 +1,197 @@
+/* Single Listing Page */
+.listing-single-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Left Column */
+.listing-single-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Image */
+.listing-single-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 380px;
+    background: #F0EDE6;
+}
+
+.listing-single-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no-image-large {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #888780;
+}
+
+.type-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.type-sale { background: #DCF0FB; color: #1A6B9A; }
+.type-rental { background: #FEF3DC; color: #C8922A; }
+.type-bnb { background: #EAF3DE; color: #3B6D11; }
+.type-hostel { background: #F3DEEA; color: #6B1A4A; }
+
+/* Details below image */
+.listing-single-details {
+    background: #fff;
+    border: 0.5px solid #D3D1C7;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.listing-single-details h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #1C1A18;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.listing-single-location {
+    font-size: 14px;
+    color: #888780;
+    margin-bottom: 0.75rem;
+}
+
+.listing-single-price {
+    font-size: 26px;
+    font-weight: 600;
+    color: #C8922A;
+    margin-bottom: 1.5rem;
+}
+
+.listing-single-description {
+    padding-top: 1rem;
+    border-top: 0.5px solid #D3D1C7;
+    margin-bottom: 1.5rem;
+}
+
+.listing-single-description h3,
+.listing-single-seller h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444441;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.listing-single-description p {
+    font-size: 14px;
+    color: #555552;
+    line-height: 1.7;
+}
+
+.listing-single-seller {
+    padding-top: 1rem;
+    border-top: 0.5px solid #D3D1C7;
+}
+
+.seller-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1C1A18;
+}
+
+/* Right Column — Inquiry Form */
+.inquiry-card {
+    background: #fff;
+    border: 0.5px solid #D3D1C7;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: sticky;
+    top: 80px;
+}
+
+.inquiry-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #1C1A18;
+    margin-bottom: 0.25rem;
+}
+
+.inquiry-card textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 0.5px solid #B4B2A9;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    resize: vertical;
+    transition: border-color 0.15s;
+}
+
+.inquiry-card textarea:focus {
+    outline: none;
+    border-color: #C8922A;
+}
+
+/* Seller Contact Buttons */
+.seller-contacts {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contact-btn:hover {
+    opacity: 0.85;
+}
+
+.contact-call {
+    background: #DCF0FB;
+    color: #1A6B9A;
+    border: 0.5px solid #A8D8F0;
+}
+
+.contact-whatsapp {
+    background: #EAF3DE;
+    color: #3B6D11;
+    border: 0.5px solid #97C459;
+}
+
+.contact-email {
+    background: #FEF3DC;
+    color: #C8922A;
+    border: 0.5px solid #F0D495;
+}
